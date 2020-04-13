@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>Lab 1/1</title>
+    </head>
+    <body>
+        <!-- article -->
+        <article>
+            <h2>Google Chrome</h2>
+            <p>
+                Google Chrome is a web browser developed by Google, released in
+                2008. Chrome is the world's most popular web browser today!
+            </p>
+        </article>
+        <p></p>
+
+        <!-- aside -->
+        <p>
+            My family and I visited The Epcot center this summer. The weather
+            was nice, and Epcot was amazing! I had a great summer together with
+            my family!
+        </p>
+        <p></p>
+
+        <aside>
+            <h4>Epcot Center</h4>
+            <p>
+                Epcot is a theme park at Walt Disney World Resort featuring
+                exciting attractions, international pavilions, award-winning
+                fireworks and seasonal special events.
+            </p>
+        </aside>
+        <p></p>
+
+        <!-- audio and source -->
+        <audio controls>
+            <source src="aud.ogg" type="audio/ogg" />
+            <source src="aud.mp3" type="audio/mpeg" />
+            Your browser does not support the audio tag.
+        </audio>
+        <p></p>
+
+        <!-- bdi -->
+        <ul>
+            <li>User <bdi>hrefs</bdi>: 60 points</li>
+            <li>User <bdi>jdoe</bdi>: 80 points</li>
+            <li>User <bdi>إيان</bdi>: 90 points</li>
+        </ul>
+        <p></p>
+
+        <!-- canvas -->
+        <canvas id="myCanvas"></canvas>
+
+        <script>
+            let canvas = document.getElementById("myCanvas");
+            let ctx = canvas.getContext("2d");
+            ctx.fillStyle = "#FF0000";
+            ctx.fillRect(0, 0, 80, 80);
+        </script>
+        <p></p>
+
+        <!-- datalist -->
+        <input list="browsers" />
+
+        <datalist id="browsers">
+            <option value="Internet Explorer"> </option>
+            <option value="Firefox"> </option>
+            <option value="Chrome"> </option>
+            <option value="Opera"> </option>
+            <option value="Safari"> </option>
+        </datalist>
+        <p></p>
+
+        <!-- dialog -->
+        <table>
+            <tr>
+                <th>
+                    January <dialog open>This is an open dialog window</dialog>
+                </th>
+                <th>February</th>
+                <th>March</th>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td>28</td>
+                <td>31</td>
+            </tr>
+        </table>
+        <p></p>
+
+        <!-- embed -->
+        <embed src="helloworld.swf" />
+
+        <!-- figure and figcaption -->
+        <figure>
+            <img src="Pic.jpg" alt="Trulli" style="width: 100%;" />
+            <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+        </figure>
+
+        <!-- footer -->
+        <footer>
+            <p>Posted by: Hege Refsnes</p>
+            <p>
+                Contact information:
+                <a href="mailto:someone@example.com"> someone@example.com</a>.
+            </p>
+        </footer>
+        <p></p>
+
+        <!-- header -->
+        <article>
+            <header>
+                <h1>Most important heading here</h1>
+                <h2>Less important heading here</h2>
+                <p>Some additional information here</p>
+            </header>
+            <p>Lorem Ipsum dolor set amet....</p>
+        </article>
+        <p></p>
+
+        <!-- main -->
+        <main>
+            <h2>Web Browsers</h2>
+            <p>Chrome, Firefox, and Edge are the most used browsers today.</p>
+
+            <article>
+                <h3>Google Chrome</h3>
+                <p>
+                    Chrome is a free, open-source web browser developed by
+                    Google, released in 2008.
+                </p>
+            </article>
+
+            <article>
+                <h3>Microsoft Edge</h3>
+                <p>
+                    Edge is a free web browser from Microsoft, released in 1995.
+                </p>
+            </article>
+
+            <article>
+                <h3>Mozilla Firefox</h3>
+                <p>
+                    Firefox is a free, open-source web browser from Mozilla,
+                    released in 2004.
+                </p>
+            </article>
+        </main>
+        <p></p>
+
+        <!-- mark -->
+        <p>Do not forget to buy <mark>milk</mark> today.</p>
+        <p></p>
+
+        <!-- menuitem -->
+        <menu type="context" id="mymenu">
+            <menuitem
+                label="Refresh"
+                onclick="window.location.reload();"
+                icon="ico_reload.png"
+            >
+            </menuitem>
+            <menu label="Share on...">
+                <menuitem
+                    label="Twitter"
+                    icon="ico_twitter.png"
+                    onclick="window.open('//twitter.com/intent/tweet?text='+window.location.href);"
+                >
+                </menuitem>
+                <menuitem
+                    label="Facebook"
+                    icon="ico_facebook.png"
+                    onclick="window.open('//facebook.com/sharer/sharer.php?u='+window.location.href);"
+                >
+                </menuitem>
+            </menu>
+            <menuitem
+                label="Email This Page"
+                onclick="window.location='mailto:?body='+window.location.href;"
+            ></menuitem>
+        </menu>
+        <p></p>
+
+        <!-- meter -->
+        <label for="disk_c">Disk usage C:</label>
+        <meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter><br />
+        <p></p>
+
+        <!-- nav -->
+        <nav>
+            <a href="/html/">HTML</a> | <a href="/css/">CSS</a> |
+            <a href="/js/">JavaScript</a> |
+            <a href="/jquery/">jQuery</a>
+        </nav>
+        <p></p>
+
+        <!-- output -->
+        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            0 <input type="range" id="a" value="50" />100 +<input
+                type="number"
+                id="b"
+                value="50"
+            />
+            =<output name="x" for="a b"></output>
+        </form>
+        <p></p>
+
+        <!-- picture -->
+        <picture>
+            <source media="(min-width: 650px)" srcset="Pic.jpg" />
+            <source media="(min-width: 465px)" srcset="Pic.jpg" />
+            <img
+                src="Pic.jpg"
+                alt="Moon"
+                style="width: auto;"
+            />
+        </picture>
+        <p></p>
+
+        <!-- progress -->
+        <label for="file">Downloading progress:</label>
+        <progress id="file" value="32" max="100"> 32% </progress>
+        <p></p>
+
+        <!-- section -->
+        <section>
+            <h2>WWF</h2>
+            <p>The World Wide Fund for Nature (WWF) is....</p>
+        </section>
+        <p></p>
+
+        <!-- summary -->
+        <details>
+            <summary>Copyright 1999-2014.</summary>
+            <p>- by Refsnes Data. All Rights Reserved.</p>
+            <p>
+                All content and graphics on this web site are the property of
+                the company Refsnes Data.
+            </p>
+        </details>
+        <p></p>
+
+        <!-- template -->
+        <template>
+            <h2>Moon/h2>
+            <img src="Pic.jpg" />
+        </template>
+        <p></p>
+
+        <!-- time -->
+        <p>We open at <time>10:00</time> every morning.</p>
+
+        <p>
+            I have a date on
+            <time datetime="2008-02-14 20:00">Valentines day</time>.
+        </p>
+        <p></p>
+
+        <!-- video and track -->
+        <video width="320" height="240" controls>
+            <source src="L.mp4" type="video/mp4" />
+            <source src="L.ogg" type="video/ogg" />
+            <track
+                src="subtitles_en.vtt"
+                kind="subtitles"
+                srclang="en"
+                label="English"
+            />
+            <track
+                src="subtitles_no.vtt"
+                kind="subtitles"
+                srclang="no"
+                label="Norwegian"
+            />
+        </video>
+        <p></p>
+
+        <!-- wbr -->
+        <p>
+            To learn AJAX, you must be familiar with the XML<wbr />Http<wbr />Request
+            Object.
+        </p>
+    </body>
+</html>
