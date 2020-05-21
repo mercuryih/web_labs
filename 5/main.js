@@ -19,12 +19,13 @@ function load_photo() {
                 console.log(data); //вивід в консоль
                 for (let i = 0; i < data.results.length; i++) {
                     var img = document.createElement("img");
-                    document.body.appendChild(img);
                     img.setAttribute("src", data.results[i].picture.large);
                     img.style.width = "15vw"; //стилі для картинки
                     img.style.height = "15vw";
                     img.style.marginLeft = "4vw";
                     img.style.marginBottom = "3vw";
+                    document.body.appendChild(img);
+
                 }
             } catch (err) {
                 document.write(err.message + " in " + xhttp.responseText); //вивід помилки

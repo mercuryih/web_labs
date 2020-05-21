@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="task2.css">
+    <script src="task2.js"></script>
+    <title>Diagrama</title>
+</head>
+<div>
+    <aside class="left_menu">
+        <h1>Площі областей України</h1>
+        <table cellspacing="0" id="table">
+            <tr class="tr">
+                <th></th>
+                <th>Область</th>
+                <th>Площа км^2</th>
+            </tr>
+            <tr class="tr">
+                <td class="td"><button class="delete_tr" id="Kyiv">Видалити</button></td>
+                <td class="td">Київська</td>
+                <td class="td">28121</td>
+            </tr>
+            <tr class="tr">
+                <td class="td"><button class="delete_tr" id="Maun">Видалити</button></td>
+                <td class="td">Закарпатська</td>
+                <td class="td">12753</td>
+            </tr>
+            <tr class="tr">
+                <td class="td"><button class="delete_tr" id="Odessa">Видалити</button></td>
+                <td class="td">Одеська</td>
+                <td class="td">33314</td>
+            </tr>
+            <tr class="tr">
+                <td class="td"><button class="delete_tr" id="Zap">Видалити</button></td>
+                <td class="td">Запорізька</td>
+                <td class="td">27183</td>
+            </tr>
+        </table>
+        <button id="add_tr">Додати область</button>
+    </aside>
+
+    <div class="right_block">
+        <h1>Діаграма</h1>
+        <div id="diagrama">
+            <div class="block_for_diagrama" style="height:84.4%;" title="84.4%"><p class="rotate">Київська</p></div>
+            <div class="block_for_diagrama" style="height:38.3%;" title="38.3%"><p class="rotate">Закарпатська</p></div>
+            <div class="block_for_diagrama" style="height:100%;" title="100%"><p class="rotate">Одеська</p></div>
+            <div class="block_for_diagrama" style="height:83.8%;" title="83.8%"><p class="rotate">Запорізбка</p></div>
+        </div>
+    </div>
+</body>
+</html>
