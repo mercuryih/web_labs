@@ -1,0 +1,25 @@
+.input{
+  width: 200px;
+  height: 20px;
+  margin-left: 20px;
+}
+.incorrect{
+  color: red;
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+.input_field {
+  margin-bottom: 10px;
+  width: 400px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.red{
+  border: 2px solid red;
+}
+.green{
+    border: 2px solid green;
+}
